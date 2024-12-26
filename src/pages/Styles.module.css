@@ -1,0 +1,558 @@
+/* Home page Stylings */
+
+.homePage {
+
+  margin: 0;
+  padding: 0;
+  background-color:transparent;
+}
+
+/* Banner Section */
+.banner {
+  background-color:rgb(59, 58, 58);
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.bannerTitle {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.bannerSubtitle {
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+
+/* Courses Section */
+.coursesSection {
+  padding: 40px 20px;
+  background-color:transparent;
+  text-align: center;
+}
+
+.coursesHeader {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Grid Layout for Course Cards */
+.coursesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.courseCard {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  width: 350px;
+  height: 450px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.courseCard:hover {
+  transform: translateY(-10px);
+}
+
+/* Course Card Title */
+.courseTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Course Card Description */
+.courseDescription {
+  font-size: 1.25rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+/* Button Style */
+.startButton {
+  padding: 10px 20px;
+  background-color:orangered;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.startButton:hover {
+  background-color:orangered;
+  color: black;
+}
+.courseimg{
+  width: 100%;
+  height: 200px;
+}
+.Bannerimg{
+  width: 100%;
+  height: 700px;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media screen and (max-width: 1024px) {
+  .coursesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .coursesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .bannerTitle {
+    font-size: 2rem;
+  }
+
+  .coursesHeader {
+    font-size: 2rem;
+  }
+}
+
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #d64d0e;
+background-image: linear-gradient(62deg,#ffff 10% , black 49%, #d64d0e 99%);
+
+
+    padding: 10px 20px;
+    
+  }
+  
+  .brandTitle {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 100px;
+  }
+  
+  .navbarLinks {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbarLinks li {
+    display: inline;
+  }
+  
+  .navbarLinks a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .navbarLinks a:hover {
+    color: #ff6347;
+  }
+  
+  .loginBtn {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 100px;
+  }
+  
+  .loginBtn:hover {
+    background-color: #ff4500;
+  }
+
+
+  
+  /* About page stylings */
+  .aboutUsContainer {
+    max-width: 2000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    
+  }
+  
+  .heading {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .subHeading {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-top: 30px;
+  }
+  
+  .missionText {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .featuresList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .featuresList li {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    padding: 8px 0;
+    /* border-bottom: 1px solid black; */
+  }
+  
+  .callToAction {
+    font-size: 30px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #ff6347;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .callToAction:hover {
+    background-color: #ff4500;
+    color: black;
+  }
+
+
+/* Pricing page Styles */
+.pricingContainer {
+  max-width: 2000px;
+  height: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+}
+
+.heading {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.planContainer {
+  display: flex;
+  justify-content:space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.planCard {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 20%;
+  height: 450px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.planCard:hover {
+  transform: scale(1.05);
+}
+
+.planTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.planPrice {
+  font-size: 28px;
+  color: #ff6347;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.planFeatures {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.planFeatures li {
+  font-size: 18px;
+  color: #555;
+  padding: 8px 0;
+  
+}
+
+.planButton {
+  background-color: #ff6347;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.planButton:hover {
+  background-color: #ff4500;
+  color: black;
+}
+
+/* Footer Styles  */
+.footer {
+  margin-top: 100px;
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.brandSection {
+  flex: 1;
+  text-align: left;
+}
+
+.brandTitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ff6347;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  border-top: 2px solid black;
+  padding-top: 30px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+.quickLinks {
+  flex: 1;
+  text-align: left;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  color: #ff6347;
+  margin-bottom: 10px;
+}
+
+.linksList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.linksList li {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.linksList a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.linksList a:hover {
+  color: #ff6347;
+}
+
+.socialMedia {
+  flex: 1;
+  text-align: left;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 30px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #ff6347;
+}
+.footerText strong {
+  font-weight: bold;
+}
+
+
+
+/* course selection button styling */
+.corseselction{
+  color: black;
+  background-color: orangered;
+  padding: 20px;
+  margin: 20px;
+  
+  align-items: center;
+  
+
+}
+
+
+/* Login page Stylings */
+
+
+/* Login and Signup Page Container */
+.loginPage, .signupPage {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formTitle {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Form Styling */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+/* Submit Button */
+.submitButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #45a049;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 600px) {
+  .loginPage, .signupPage {
+    width: 90%;
+  }
+
+  .formTitle {
+    font-size: 1.6rem;
+  }
+
+  .submitButton {
+    font-size: 1rem;
+  }
+}
+
+
+
+/* Qa card Srtlings */
+.QAcardheader{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: rgb(226, 98, 52);
+  color: white;
+  font-weight: bold;
+  font-size: xx-large;
+
+}
+.questions{
+  font-weight: bold;
+  padding: 25px;
+
+
+}
+.optionbtn{
+  background-color:white;
+  padding: 10px;
+  font-size: larger;
+}
+.optionbtn:hover{
+  background-color: rgb(244, 141, 103);
+  
+}
